@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'core/constants/palette.dart';
 import 'presentation/pages/home_page.dart';
-import 'presentation/pages/news_view_page.dart';
+// import 'presentation/pages/news_view_page.dart';
+import './service_localator.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setUpService();
   runApp(const MyApp());
 }
 
