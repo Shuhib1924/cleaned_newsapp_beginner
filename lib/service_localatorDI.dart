@@ -3,6 +3,6 @@ import 'package:get_it/get_it.dart';
 
 final GetIt s1 = GetIt.instance;
 
-void setUpService() {
+void setUpServiceDI() {
   s1.registerSingleton<ButtonInfo>(const ButtonInfo('info text'));
 }
