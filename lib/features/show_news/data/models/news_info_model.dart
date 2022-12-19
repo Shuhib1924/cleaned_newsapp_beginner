@@ -1,7 +1,7 @@
 import 'package:clean_newsletter/features/show_news/domain/entities/news_info.dart';
 
 class NewsInfoModel extends NewsInfo {
-  const NewsInfoModel({
+  NewsInfoModel({
     String? title,
     String? author,
     String? imageURL,
@@ -14,6 +14,7 @@ class NewsInfoModel extends NewsInfo {
           content: content,
           dateTime: _getDateTimeInDateTime(dateTime),
         );
+
   static DateTime _getDateTimeInDateTime(String? dateTime) {
     if (dateTime == null) {
       return DateTime.now();
